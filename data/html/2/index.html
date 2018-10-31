@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>アムダールの法則 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"アムダールの法則","wgTitle":"アムダールの法則","wgCurRevisionId":67406945,"wgRevisionId":67406945,"wgArticleId":576752,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["コンピュータアーキテクチャ","コンピュータに関する法則","並列コンピューティング","エポニム"],"wgBreakFrames":false,"wgPageContentLanguage":"ja","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"ja","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"アムダールの法則","wgRelevantArticleId":576752,"wgRequestId":"W9P1JgpAICMAAITDxAwAAABP","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikiEditorEnabledModules":[],"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"ja","pageLanguageDir":"ltr","pageVariantFallbacks":"ja","usePageImages":true,"usePageDescriptions":true},"wgMFExpandAllSectionsUserOption":true,"wgMFEnableFontChanger":true,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"日本語","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgWikibaseItemId":"Q460419","wgScoreNoteLanguages":{"arabic":"العربية","catalan":"català","deutsch":"Deutsch","english":"English","espanol":"español","italiano":"italiano","nederlands":"Nederlands","norsk":"norsk","portugues":"português","suomi":"suomi","svenska":"svenska","vlaams":"West-Vlams"},"wgScoreDefaultNoteLanguage":"nederlands","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":true,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@1smlfrf",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"ja"});
+});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["ext.cite.a11y","ext.math.scripts","site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.ReferenceTooltips","ext.gadget.suppressEnterAtSummaryBox","ext.gadget.checkSignature","ext.gadget.WikiMiniAtlas","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=ext.3d.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=ja&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.33.0-wmf.1"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1200px-AmdahlsLaw.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/ja.m.wikipedia.org/wiki/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87"/>
+<link rel="alternate" type="application/x-wiki" title="編集" href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit"/>
+<link rel="edit" title="編集" href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (ja)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//ja.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=ja&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-アムダールの法則 rootpage-アムダールの法則 skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="ja">アムダールの法則</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">出典: フリー百科事典『ウィキペディア（Wikipedia）』</div>				<div id="contentSub"></div>
+				<div id="jump-to-nav"></div>				<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+				<a class="mw-jump-link" href="#p-search">Jump to search</a>
+				<div id="mw-content-text" lang="ja" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:AmdahlsLaw.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/300px-AmdahlsLaw.svg.png" width="300" height="234" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/450px-AmdahlsLaw.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/600px-AmdahlsLaw.svg.png 2x" data-file-width="640" data-file-height="500" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:AmdahlsLaw.svg" class="internal" title="拡大"></a></div>複数のプロセッサを使って並列計算してプログラムの高速化を図る場合、そのプログラムの逐次的部分は、制限を受ける。例えば、プログラムの95%を並列化できたとしても、またどれだけプロセッサ数を増やしたとしても、図で示したように20倍以上には高速化しない。</div></div></div>
+<p><b>アムダールの法則</b>（アムダールのほうそく、Amdahl's law）は、ある計算機システムとその対象とする計算についてのモデルにおいて、その計算機の並列度を上げた場合に、全体として期待できる全体の性能向上の程度を数式として表現したものである。<a href="/wiki/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BB%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3" title="コンピュータ・アーキテクチャ">コンピュータ・アーキテクト</a>の<a href="/wiki/%E3%82%B8%E3%83%BC%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB" title="ジーン・アムダール">ジーン・アムダール</a>が主張したものであり、<i>Amdahl's argument</i>（アムダールの主張）という呼称もある<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>。<a href="/wiki/%E4%B8%A6%E5%88%97%E8%A8%88%E7%AE%97" title="並列計算">並列計算</a>の分野において、複数のプロセッサを使ったときの理論上の性能向上の限界を予測するのによく使われる。
+</p><p>複数のプロセッサを使い並列計算によってプログラムの高速化を図る場合、そのプログラムの中で逐次的に実行しなければならない部分の時間によって、高速化が制限される。例えば、1プロセッサでは20時間かかるプログラムがあり、その中の1時間かかる部分が並列化できないとする。したがって、19時間ぶん（95%）は並列化できるが、どれだけプロセッサを追加して並列化したとしても、そのプログラムの最小実行時間は1時間より短くならない。なぜなら、並列化できない部分に必ず1時間かかるため、図にも示したように、この場合の高速化は20倍までが限界だからである。
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="ja" dir="ltr"><h2>目次</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#詳細"><span class="tocnumber">1</span> <span class="toctext">詳細</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#並列化"><span class="tocnumber">2</span> <span class="toctext">並列化</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#収穫逓減の法則との関係"><span class="tocnumber">3</span> <span class="toctext">収穫逓減の法則との関係</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#アムダール本人の見解"><span class="tocnumber">4</span> <span class="toctext">アムダール本人の見解</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#逐次的プログラムの高速化"><span class="tocnumber">5</span> <span class="toctext">逐次的プログラムの高速化</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#グスタフソンの法則との関係"><span class="tocnumber">6</span> <span class="toctext">グスタフソンの法則との関係</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#関連項目"><span class="tocnumber">7</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#脚注"><span class="tocnumber">8</span> <span class="toctext">脚注</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#参考文献"><span class="tocnumber">9</span> <span class="toctext">参考文献</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#外部リンク"><span class="tocnumber">10</span> <span class="toctext">外部リンク</span></a></li>
+</ul>
+</div>
+
+<h2><span id=".E8.A9.B3.E7.B4.B0"></span><span class="mw-headline" id="詳細">詳細</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=1" title="節を編集: 詳細">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>アムダールの法則は、並列化しても問題の大きさが変化しないという前提と、問題には並列化できない部分があるという前提の上で、逐次的アルゴリズムとそれに対応したアルゴリズムの並列化実装によって期待できる高速化の関係をモデル化したものである。例えば、ある大きさの問題をあるアルゴリズムを並列化実装したもので実行した場合、問題の12%を並列化によって好きなように高速化できるとする（残り88%は並列化できない処理である）。アムダールの法則によれば、このときの並列化していない実装と比較した並列化版による高速化は最大でも <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{1-0.12}}=1.136}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>0.12</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.136</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{1-0.12}}=1.136}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7b01e9c93a34a420f8ce48245fcce034b7f2d78" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:17.368ex; height:5.343ex;" alt="{\frac  {1}{1-0.12}}=1.136"/></span> 倍にしかならない。
+</p><p>より技術的に解説すると、この法則は、ある計算のうち高速化によって影響を受ける部分の割合 <i>P</i> とその性能向上率 <i>S</i> から、全体として達成可能な性能向上率を求めるものである。例えば、ある改良が計算全体の 30% に影響する場合、<i>P</i> は 0.3 である。また、その部分が2倍に高速化されるなら <i>S</i> は 2 である。アムダールの法則によれば、全体としての性能向上は次の式で表される。
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{(1-P)+{\frac {P}{S}}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>P</mi>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>P</mi>
+                  <mi>S</mi>
+                </mfrac>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{(1-P)+{\frac {P}{S}}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67042d42e795383b5c9cb1ff6a289d33ca4f062b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:13.304ex; height:6.843ex;" alt="{\frac  {1}{(1-P)+{\frac  {P}{S}}}}"/></span>.</dd></dl>
+<p>従来の計算時間を 1 とする。改良されたプログラムの計算時間は、改良と関係しない部分の計算時間（1 &#8722; <i>P</i>）と改良された部分の計算時間（<i>P</i>/<i>S</i>）の合計となる。全体の性能向上率は、従来の計算時間を改良されたプログラムの計算時間で割ったものであり、上の式はそれを表している。
+</p><p>もう少し複雑な例を挙げる。あるタスクが4つの部分に分割されるとする。各部のタスク実行時間に占める割合は P1 = 0.11 (11%)、P2 = 0.18 (18%)、P3 = 0.23 (23%)、P4 = 0.48 (48%) で、全部を合計すると 100% になる。そこで、各部分に独自の改良を施す。P1 は改良しないので S1 = 1 (100%)、P2 は5倍に性能向上したので S2 = 5 (500%)、同様に S3 = 20 (2000%)、S4 = 1.6 (160%) とする。改良されたタスクの実行時間は <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {P1}{S1}}+{\frac {P2}{S2}}+{\frac {P3}{S3}}+{\frac {P4}{S4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mi>S</mi>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mn>2</mn>
+            </mrow>
+            <mrow>
+              <mi>S</mi>
+              <mn>2</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mn>3</mn>
+            </mrow>
+            <mrow>
+              <mi>S</mi>
+              <mn>3</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>P</mi>
+              <mn>4</mn>
+            </mrow>
+            <mrow>
+              <mi>S</mi>
+              <mn>4</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {P1}{S1}}+{\frac {P2}{S2}}+{\frac {P3}{S3}}+{\frac {P4}{S4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c7ecb1c2735ed9ac4d967ff2f68d40749dbb676" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:23.497ex; height:5.343ex;" alt="{\frac  {P1}{S1}}+{\frac  {P2}{S2}}+{\frac  {P3}{S3}}+{\frac  {P4}{S4}}"/></span> であるから、これに代入すると 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {{\frac {0.11}{1}}+{\frac {0.18}{5}}+{\frac {0.23}{20}}+{\frac {0.48}{1.6}}}=0.4575}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>0.11</mn>
+              <mn>1</mn>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>0.18</mn>
+              <mn>5</mn>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>0.23</mn>
+              <mn>20</mn>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>0.48</mn>
+              <mn>1.6</mn>
+            </mfrac>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.4575</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {{\frac {0.11}{1}}+{\frac {0.18}{5}}+{\frac {0.23}{20}}+{\frac {0.48}{1.6}}}=0.4575}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98469c6d434168c9c519fe6934b7f87b65bf7e14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:37.96ex; height:5.176ex;" alt="{\displaystyle {{\frac {0.11}{1}}+{\frac {0.18}{5}}+{\frac {0.23}{20}}+{\frac {0.48}{1.6}}}=0.4575}"/></span></dd></dl>
+<p>となり、オリジナルの半分弱の時間ということがわかる。従って、性能向上率は <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {1}{0.4575}}=2.186}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>0.4575</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>2.186</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{0.4575}}=2.186}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/64d479438d52329cfa97e4711b9e002513097e78" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:15.69ex; height:5.343ex;" alt="{\displaystyle {\frac {1}{0.4575}}=2.186}"/></span> と約2倍以上になる。注意すべきは、20倍とか5倍といった改良を施しても、システム全体としてはあまり効果が出ない点である。これは、P4 が元々実行時間の約半分を占めていて、S4 が 1.6 という点と P1 が全く改良されていない点が影響している。
+</p>
+<h2><span id=".E4.B8.A6.E5.88.97.E5.8C.96"></span><span class="mw-headline" id="並列化">並列化</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=2" title="節を編集: 並列化">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Amdahl_law2.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/ja/thumb/1/17/Amdahl_law2.png/300px-Amdahl_law2.png" width="300" height="198" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/ja/thumb/1/17/Amdahl_law2.png/450px-Amdahl_law2.png 1.5x, //upload.wikimedia.org/wikipedia/ja/thumb/1/17/Amdahl_law2.png/600px-Amdahl_law2.png 2x" data-file-width="730" data-file-height="483" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Amdahl_law2.png" class="internal" title="拡大"></a></div><a href="/wiki/%E4%B8%A6%E5%88%97%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" class="mw-redirect" title="並列コンピューティング">並列コンピューティング</a>で複数のプロセッサを使って性能向上を図る場合、対象プログラムの並列化できない部分の割合に大きく左右される。例えば、プログラムの半分(0.5)が並列実行できない場合、理論上の性能向上限界は 2 となる（1/(0.5+(1-0.5)/N) で N を極限まで大きくした場合）。</div></div></div>
+<p>プログラムの並列化できる部分の実行時間の割合を <i>P</i> としたとき、並列化不可能な部分は (1 &#8722; <i>P</i>)であり、<i>N</i>個のプロセッサを使ったときの全体の性能向上率は次の式で表される。
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S(N)={\frac {1}{(1-P)+{\frac {P}{N}}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>P</mi>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>P</mi>
+                  <mi>N</mi>
+                </mfrac>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(N)={\frac {1}{(1-P)+{\frac {P}{N}}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/771e0c4a98e0422ddb5d22a90a6cec5976d72ea3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:22ex; height:6.843ex;" alt="S(N)={\frac  {1}{(1-P)+{\frac  {P}{N}}}}"/></span></dd></dl>
+<p><i>N</i> が<a href="/wiki/%E7%84%A1%E9%99%90%E5%A4%A7" class="mw-redirect" title="無限大">無限大</a>に近づく極限では、性能向上率は 1 / (1 − <i>P</i>) となる。実際、(1 − <i>P</i>) の並列化不可能な成分がどれほど小さくとも <i>N</i> が大きくなれば価格性能比は急激に低下していく。
+</p><p>例として、<i>P</i> が90%ならば (1 − <i>P</i>) は 10% となり、<i>N</i> をどれだけ大きくしても性能向上は1プロセッサの10倍までで頭打ちとなる。このため、<a href="/wiki/%E4%B8%A6%E5%88%97%E8%A8%88%E7%AE%97" title="並列計算">並列計算</a>が有効であるのは、<a href="/wiki/CPU" title="CPU">プロセッサ</a>数が少ない場合か、適応領域の問題の <i>P</i> の値が極めて大きい場合（<a href="https://en.wikipedia.org/wiki/embarrassingly_parallel" class="extiw" title="en:embarrassingly parallel">embarrassingly parallel</a> 問題と呼ぶ）に限られる。並列計算のプログラミング技法の多くは、(1 – <i>P</i>) を可能な限り小さくするためのものである。
+</p><p>特定のプロセッサ数 (<i>NP</i>) での実測高速化係数 (<i>SU</i>) すなわち1プロセッサの何倍の性能かという値を使えば、<i>P</i> すなわち並列化可能部分の割合は次のように推定できる。
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P_{\text{estimated}}={\frac {{\frac {1}{SU}}-1}{{\frac {1}{NP}}-1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>estimated</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mn>1</mn>
+                  <mrow>
+                    <mi>S</mi>
+                    <mi>U</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mn>1</mn>
+                  <mrow>
+                    <mi>N</mi>
+                    <mi>P</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{\text{estimated}}={\frac {{\frac {1}{SU}}-1}{{\frac {1}{NP}}-1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28dd671c569413538cfa2caf2be5a098d8ad3265" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:20.141ex; height:8.176ex;" alt="P_{{\text{estimated}}}={\frac  {{\frac  {1}{SU}}-1}{{\frac  {1}{NP}}-1}}"/></span></dd></dl>
+<p>このように推定した <i>P</i> をアムダールの法則の式に適用すれば、異なるプロセッサ数での高速化の度合いが推定できる。
+</p>
+<table class="wikitable">
+<caption>80%の性能を出すのに必要な並列度
+</caption>
+<tbody><tr>
+<th>プロセッサ数(N)
+</th>
+<th>順次実行部分の実行時間の割合
+</th></tr>
+<tr>
+<td>2</td>
+<td>25%
+</td></tr>
+<tr>
+<td>4</td>
+<td>8.3%
+</td></tr>
+<tr>
+<td>6</td>
+<td>5.0%
+</td></tr>
+<tr>
+<td>8</td>
+<td>3.6%
+</td></tr>
+<tr>
+<td>12</td>
+<td>2.3%
+</td></tr>
+<tr>
+<td>16</td>
+<td>1.7%
+</td></tr>
+<tr>
+<td>32</td>
+<td>0.81%
+</td></tr>
+<tr>
+<td>64</td>
+<td>0.40%
+</td></tr>
+<tr>
+<td>256</td>
+<td>0.10%
+</td></tr>
+<tr>
+<td>1024</td>
+<td>0.024%
+</td></tr>
+<tr>
+<td>4096</td>
+<td>0.0061%
+</td></tr>
+<tr>
+<td>65536</td>
+<td>0.00038%
+</td></tr></tbody></table>
+<p>これは 0.25 / (N - 1) で計算できる。
+</p>
+<h2><span id=".E5.8F.8E.E7.A9.AB.E9.80.93.E6.B8.9B.E3.81.AE.E6.B3.95.E5.89.87.E3.81.A8.E3.81.AE.E9.96.A2.E4.BF.82"></span><span class="mw-headline" id="収穫逓減の法則との関係">収穫逓減の法則との関係</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=3" title="節を編集: 収穫逓減の法則との関係">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>アムダールの法則は<a href="/wiki/%E5%8F%8E%E7%A9%AB%E9%80%93%E6%B8%9B" title="収穫逓減">収穫逓減の法則</a>と組み合わせて述べられることが多いが、アムダールの法則を適用した特殊な例のみが「収穫逓減の法則」を示す。最初から（性能向上の観点で）最適な実装をしていく場合、改良に対して得られる性能向上は単調減少していく。しかし最適でない改良なら、さらなる改良を施すことで新たな性能向上が得られる場合もある。一般にシステムの改良は困難を伴う場合や時間がかかる場合があり、必ずしも常に最善の改良を行えるわけではない。
+</p><p>プロセッサを追加するとそれに対応して並列化して動作するプログラムがあるとする。そのようなプログラムで解くべき問題の大きさが固定の場合に、プロセッサを追加して性能向上を図ろうとしたとき、アムダールの法則は収穫逓減の法則と同じことを表す。プロセッサを追加する度に、それによって得られる性能向上の度合いは減っていく。プロセッサを倍増させたときの性能向上比率は減少していき、最終的には <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle 1/(1\,-\,P)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>/</mo>
+          </mrow>
+          <mo stretchy="false">(</mo>
+          <mn>1</mn>
+          <mspace width="thinmathspace" />
+          <mo>&#x2212;<!-- − --></mo>
+          <mspace width="thinmathspace" />
+          <mi>P</mi>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle 1/(1\,-\,P)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f92b2bd94efbcb1cc31edb4f0ba20e755de711e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.032ex; height:2.176ex;" alt="\scriptstyle 1/(1\,-\,P)"/></span> へと近づいていく。
+</p><p>ここでは、メモリ帯域幅やI/O帯域幅といった<a href="/wiki/%E3%83%9C%E3%83%88%E3%83%AB%E3%83%8D%E3%83%83%E3%82%AF" title="ボトルネック">ボトルネック</a>の可能性を考慮していない。それらがプロセッサ数に比例して拡大しないなら、収穫逓減の傾向がさらに強まることになる。
+</p>
+<h2><span id=".E3.82.A2.E3.83.A0.E3.83.80.E3.83.BC.E3.83.AB.E6.9C.AC.E4.BA.BA.E3.81.AE.E8.A6.8B.E8.A7.A3"></span><span class="mw-headline" id="アムダール本人の見解">アムダール本人の見解</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=4" title="節を編集: アムダール本人の見解">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>結局のところ（並列化のオーバヘッドといったものを全て無視できるとしても）、解きたい問題が必要とする計算のうち、どれだけが並列化可能か、という点が支配的であり、アムダール本人は並列化による高性能化に悲観的であったと言われる<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>。<a href="/wiki/%E9%AB%98%E6%80%A7%E8%83%BD%E8%A8%88%E7%AE%97" title="高性能計算">高性能計算</a>の識者の間でも以前は見解が分かれており、<a href="/wiki/%E3%82%B4%E3%83%BC%E3%83%89%E3%83%B3%E3%83%BB%E3%83%99%E3%83%AB%E8%B3%9E" title="ゴードン・ベル賞">ゴードン・ベル賞</a>はこの問題へのチャレンジとして当初は設定された<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>。
+</p>
+<h2><span id=".E9.80.90.E6.AC.A1.E7.9A.84.E3.83.97.E3.83.AD.E3.82.B0.E3.83.A9.E3.83.A0.E3.81.AE.E9.AB.98.E9.80.9F.E5.8C.96"></span><span class="mw-headline" id="逐次的プログラムの高速化">逐次的プログラムの高速化</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=5" title="節を編集: 逐次的プログラムの高速化">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:352px;"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Amdahl_law1.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/ja/thumb/f/fd/Amdahl_law1.png/350px-Amdahl_law1.png" width="350" height="156" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/ja/thumb/f/fd/Amdahl_law1.png/525px-Amdahl_law1.png 1.5x, //upload.wikimedia.org/wikipedia/ja/thumb/f/fd/Amdahl_law1.png/700px-Amdahl_law1.png 2x" data-file-width="900" data-file-height="400" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Amdahl_law1.png" class="internal" title="拡大"></a></div>タスクが独立した二つの部分 A と B から構成されている。B は計算時間の約25%を占めている。がんばって B を改良して5倍の性能にしても、全体としての性能向上は少しでしかない。逆に A を2倍の性能に改良した方が全体性能はより向上する。</div></div></div>
+<p>ある逐次的プログラムを改良したときの最大高速化係数は、そのプログラムの一部を <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"/></span> 倍に高速化した場合、次の不等式で表される。
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\text{maximum speedup }}\leq {\frac {p}{1+f\cdot (p-1)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>maximum speedup&#xA0;</mtext>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mi>f</mi>
+              <mo>&#x22C5;<!-- ⋅ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>p</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{maximum speedup }}\leq {\frac {p}{1+f\cdot (p-1)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c1d78745823fa3182b1c6d853e6dffe7c0d2255" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:37.326ex; height:5.676ex;" alt="{\text{maximum speedup }}\leq {\frac  {p}{1+f\cdot (p-1)}}"/></span></dd></dl>
+<p>ここで <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>f</mi>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3bb782e08eca6897b057d996121da1dbbc94a6f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:0.904ex; height:2.009ex;" alt="\scriptstyle f"/></span> (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle 0\;&lt;\;f\;&lt;\;1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mn>0</mn>
+          <mspace width="thickmathspace" />
+          <mo>&lt;</mo>
+          <mspace width="thickmathspace" />
+          <mi>f</mi>
+          <mspace width="thickmathspace" />
+          <mo>&lt;</mo>
+          <mspace width="thickmathspace" />
+          <mn>1</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle 0\;&lt;\;f\;&lt;\;1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76395ee96542aab42e700693d0d0d0be93fa163e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.686ex; height:2.009ex;" alt="\scriptstyle 0\;&lt;\;f\;&lt;\;1"/></span>) は、改良した部分の（改良以前の）所要時間の割合である。例えば（右図参照）、
+</p>
+<ul><li>B を5倍に高速化した場合 (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle p\;=\;5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>p</mi>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>5</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle p\;=\;5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c58b731f22d08e30654566aebef57f68565223b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; margin-left: -0.063ex; width:4.281ex; height:1.843ex;" alt="\scriptstyle p\;=\;5"/></span>)、<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle t_{A}\;=\;3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>A</mi>
+            </mrow>
+          </msub>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>3</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle t_{A}\;=\;3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/074f1c6a81184f2220dbf450e12af55a53a272c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.149ex; height:2.009ex;" alt="\scriptstyle t_{A}\;=\;3"/></span>、<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle t_{B}\;=\;1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>1</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle t_{B}\;=\;1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0834d7dfc743a8c4b0a43ce0ece035c7fdb27820" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.161ex; height:2.009ex;" alt="\scriptstyle t_{B}\;=\;1"/></span>、<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle f\;=\;t_{A}/(t_{A}\,+\,t_{B})\;=\;0.75}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>f</mi>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>A</mi>
+            </mrow>
+          </msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>/</mo>
+          </mrow>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>A</mi>
+            </mrow>
+          </msub>
+          <mspace width="thinmathspace" />
+          <mo>+</mo>
+          <mspace width="thinmathspace" />
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+          <mo stretchy="false">)</mo>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>0.75</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle f\;=\;t_{A}/(t_{A}\,+\,t_{B})\;=\;0.75}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ed4574f8e2d2a1f93e71fa97e2b514683d5bf23" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.407ex; height:2.176ex;" alt="\scriptstyle f\;=\;t_{A}/(t_{A}\,+\,t_{B})\;=\;0.75"/></span> とすると、
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\text{maximum speedup }}\leq {\frac {5}{1+0.75\cdot (5-1)}}=1.25}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>maximum speedup&#xA0;</mtext>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mn>0.75</mn>
+              <mo>&#x22C5;<!-- ⋅ --></mo>
+              <mo stretchy="false">(</mo>
+              <mn>5</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.25</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{maximum speedup }}\leq {\frac {5}{1+0.75\cdot (5-1)}}=1.25}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/591556399dc787330b545653c79a02ed72cccd02" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:47.407ex; height:6.009ex;" alt="{\text{maximum speedup }}\leq {\frac  {5}{1+0.75\cdot (5-1)}}=1.25"/></span></dd></dl></li>
+<li>A を2倍に高速化した場合 (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle p\;=\;2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>p</mi>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>2</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle p\;=\;2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e2ee3f70a6870a229b4c6408bd67ec46969991f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; margin-left: -0.063ex; width:4.281ex; height:1.843ex;" alt="\scriptstyle p\;=\;2"/></span>)、<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle t_{B}\;=\;1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>1</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle t_{B}\;=\;1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0834d7dfc743a8c4b0a43ce0ece035c7fdb27820" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.161ex; height:2.009ex;" alt="\scriptstyle t_{B}\;=\;1"/></span>、<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle t_{A}\;=\;3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>A</mi>
+            </mrow>
+          </msub>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>3</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle t_{A}\;=\;3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/074f1c6a81184f2220dbf450e12af55a53a272c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.149ex; height:2.009ex;" alt="\scriptstyle t_{A}\;=\;3"/></span>、<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \scriptstyle f\;=\;t_{B}/(t_{A}\,+\,t_{B})\;=\;0.25}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>f</mi>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>/</mo>
+          </mrow>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>A</mi>
+            </mrow>
+          </msub>
+          <mspace width="thinmathspace" />
+          <mo>+</mo>
+          <mspace width="thinmathspace" />
+          <msub>
+            <mi>t</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+          <mo stretchy="false">)</mo>
+          <mspace width="thickmathspace" />
+          <mo>=</mo>
+          <mspace width="thickmathspace" />
+          <mn>0.25</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle f\;=\;t_{B}/(t_{A}\,+\,t_{B})\;=\;0.25}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/037043a78fa53555218d2a692a2799b2d113455f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.419ex; height:2.176ex;" alt="\scriptstyle f\;=\;t_{B}/(t_{A}\,+\,t_{B})\;=\;0.25"/></span> とすると、
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\text{maximum speedup }}\leq {\frac {2}{1+0.25\cdot (2-1)}}=1.60}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>maximum speedup&#xA0;</mtext>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mn>0.25</mn>
+              <mo>&#x22C5;<!-- ⋅ --></mo>
+              <mo stretchy="false">(</mo>
+              <mn>2</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.60</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{maximum speedup }}\leq {\frac {2}{1+0.25\cdot (2-1)}}=1.60}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/354ff73d9fffcef12285db5c39969c90433887fc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:47.407ex; height:6.009ex;" alt="{\text{maximum speedup }}\leq {\frac  {2}{1+0.25\cdot (2-1)}}=1.60"/></span></dd></dl></li></ul>
+<p>となる。したがって、Aを2倍に高速化した方がBを5倍に高速化するよりもよい結果となる。性能向上をパーセントで表す場合、次のように計算できる。
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\text{percentage improvement}}=\left(1-{\frac {1}{\text{speedup factor}}}\right)\cdot 100}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>percentage improvement</mtext>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mtext>speedup factor</mtext>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mn>100</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{percentage improvement}}=\left(1-{\frac {1}{\text{speedup factor}}}\right)\cdot 100}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41bee8541776f39ea696395dfea637aa3a93f045" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:55.953ex; height:6.176ex;" alt="{\text{percentage improvement}}=\left(1-{\frac  {1}{{\text{speedup factor}}}}\right)\cdot 100"/></span></dd></dl>
+<ul><li>Aを2倍に高速化すると、プログラム全体は1.6倍に高速化し、オリジナルから37.5%の性能向上となる。</li>
+<li>しかし、Bを5倍に高速化しても、全体としては1.25倍の高速化でしかなく、20%しか性能向上しない。</li></ul>
+<h2><span id=".E3.82.B0.E3.82.B9.E3.82.BF.E3.83.95.E3.82.BD.E3.83.B3.E3.81.AE.E6.B3.95.E5.89.87.E3.81.A8.E3.81.AE.E9.96.A2.E4.BF.82"></span><span class="mw-headline" id="グスタフソンの法則との関係">グスタフソンの法則との関係</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=6" title="節を編集: グスタフソンの法則との関係">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>1988年、<span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%B0%E3%82%B9%E3%82%BF%E3%83%95%E3%82%BD%E3%83%B3&amp;action=edit&amp;redlink=1" class="new" title="ジョン・グスタフソン (存在しないページ)">ジョン・グスタフソン</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/John_Gustafson_(scientist)" class="extiw" title="en:John Gustafson (scientist)">英語版</a>）</span></span>は<a href="/wiki/%E3%82%B0%E3%82%B9%E3%82%BF%E3%83%95%E3%82%BD%E3%83%B3%E3%81%AE%E6%B3%95%E5%89%87" title="グスタフソンの法則">グスタフソンの法則</a>と呼ばれることを指摘した。すなわち、人々が関心を持っているのは、アムダールの法則で示されるように、既に解かれた問題をより高速に解くことではなく、より大きな問題を（可能な限り正確な近似で）それなりの時間内に解くことだ、という点である。並列化できない部分が固定あるいは、問題の大きさの増大に対して非常にゆっくり増大する場合（例えば、<a href="/wiki/%E3%83%A9%E3%83%B3%E3%83%80%E3%82%A6%E3%81%AE%E8%A8%98%E5%8F%B7" title="ランダウの記号">O</a>(log <i>n</i>)）、解ける問題の大きさはプロセッサの追加に比例して増大していく。
+</p>
+<h2><span id=".E9.96.A2.E9.80.A3.E9.A0.85.E7.9B.AE"></span><span class="mw-headline" id="関連項目">関連項目</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=7" title="節を編集: 関連項目">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB" title="アムダール">アムダール社</a></li>
+<li><a href="/wiki/%E3%82%B8%E3%83%BC%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB" title="ジーン・アムダール">ジーン・アムダール</a></li>
+<li><a href="/wiki/%E6%80%A7%E8%83%BD%E8%A7%A3%E6%9E%90" title="性能解析">性能解析</a></li>
+<li><a href="/wiki/%E3%82%AF%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%91%E3%82%B9%E6%B3%95" title="クリティカルパス法">クリティカルパス法</a></li>
+<li><a href="/wiki/%E3%83%96%E3%83%AB%E3%83%83%E3%82%AF%E3%82%B9%E3%81%AE%E6%B3%95%E5%89%87" title="ブルックスの法則">ブルックスの法則</a></li>
+<li><a href="/wiki/%E3%83%A0%E3%83%BC%E3%82%A2%E3%81%AE%E6%B3%95%E5%89%87" title="ムーアの法則">ムーアの法則</a></li>
+<li><a href="/wiki/90%E5%AF%BE90%E3%81%AE%E6%B3%95%E5%89%87" title="90対90の法則">90対90の法則</a></li>
+<li><a href="/wiki/%E3%82%B0%E3%82%B9%E3%82%BF%E3%83%95%E3%82%BD%E3%83%B3%E3%81%AE%E6%B3%95%E5%89%87" title="グスタフソンの法則">グスタフソンの法則</a></li>
+<li><a href="/w/index.php?title=%E3%83%8B%E3%83%BC%E3%83%AB%E3%82%AE%E3%83%A5%E3%83%B3%E3%82%BF%E3%83%BC%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;redlink=1" class="new" title="ニールギュンターの法則 (存在しないページ)">ニールギュンターの法則</a></li></ul>
+<h2><span id=".E8.84.9A.E6.B3.A8"></span><span class="mw-headline" id="脚注">脚注</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=8" title="節を編集: 脚注">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <span class="reference-text"><a href="#CITEREFRodgers1985">Rodgers 1985</a>, p.&#160;226</span>
+</li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="reference-text">富士通と共同開発したアムダールコンピュータでも、アムダール側のモデルはマルチプロセッサとしなかった（ <a rel="nofollow" class="external free" href="http://homepage2.nifty.com/Miwa/6_F230-60/6_7(4).html">http://homepage2.nifty.com/Miwa/6_F230-60/6_7(4).html</a> ）</span>
+</li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> <span class="reference-text"><a rel="nofollow" class="external free" href="https://twitter.com/ProfMatsuoka/status/536447955352289280">https://twitter.com/ProfMatsuoka/status/536447955352289280</a></span>
+</li>
+</ol></div>
+<h2><span id=".E5.8F.82.E8.80.83.E6.96.87.E7.8C.AE"></span><span class="mw-headline" id="参考文献">参考文献</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=9" title="節を編集: 参考文献">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite style="font-style:normal" class="citation Journal">Amdahl,&#32;Gene&#32;(<span title="">1967年</span>).&#32;<a rel="nofollow" class="external text" href="http://www-inst.eecs.berkeley.edu/~n252/paper/Amdahl.pdf">“Validity of the Single Processor Approach to Achieving Large-Scale Computing Capabilities”</a>&#32;(<a href="/wiki/Portable_Document_Format" title="Portable Document Format">PDF</a>).&#32;<i>AFIPS Conference Proceedings</i>&#32;(30):  483–485<span style="display:none;">.&#32;<a rel="nofollow" class="external free" href="http://www-inst.eecs.berkeley.edu/~n252/paper/Amdahl.pdf">http://www-inst.eecs.berkeley.edu/~n252/paper/Amdahl.pdf</a></span>.</cite><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Validity+of+the+Single+Processor+Approach+to+Achieving+Large-Scale+Computing+Capabilities&amp;rft.jtitle=AFIPS+Conference+Proceedings&amp;rft.aulast=Amdahl&amp;rft.aufirst=Gene&amp;rft.au=Amdahl%2C%26%2332%3BGene&amp;rft.date=%3Cspan+title%3D%22%22%3E1967%E5%B9%B4%3C%2Fspan%3E&amp;rft.issue=30&amp;rft.pages=483%E2%80%93485&amp;rft_id=http%3A%2F%2Fwww-inst.eecs.berkeley.edu%2F%7En252%2Fpaper%2FAmdahl.pdf&amp;rfr_id=info:sid/ja.wikipedia.org:%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87"><span style="display: none;">&#160;</span></span></li>
+<li><cite style="font-style:normal" class="citation Journal" id="CITEREFRodgers1985">Rodgers,&#32;David P.&#32;(1985年6月).&#32;<a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=327215">“Improvements in multiprocessor system design”</a>.&#32;<i>ACM SIGARCH Computer Architecture News archive</i>&#32;(New York, NY, USA: <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a>)&#32;<b>13</b>&#32;(3):  225–231.&#32;<a href="/wiki/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E8%AD%98%E5%88%A5%E5%AD%90" title="デジタルオブジェクト識別子">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F327070.327215">10.1145/327070.327215</a>.&#32;<a href="/wiki/ISSN" title="ISSN">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0163-5964">0163-5964</a><span style="display:none;">.&#32;<a rel="nofollow" class="external free" href="http://portal.acm.org/citation.cfm?id=327215">http://portal.acm.org/citation.cfm?id=327215</a></span>.</cite><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Improvements+in+multiprocessor+system+design&amp;rft.jtitle=ACM+SIGARCH+Computer+Architecture+News+archive&amp;rft.aulast=Rodgers&amp;rft.aufirst=David+P.&amp;rft.au=Rodgers%2C%26%2332%3BDavid+P.&amp;rft.date=1985%E5%B9%B46%E6%9C%88&amp;rft.volume=13&amp;rft.issue=3&amp;rft.pages=225%E2%80%93231&amp;rft.place=New+York%2C+NY%2C+USA&amp;rft.pub=%5B%5BAssociation+for+Computing+Machinery%7CACM%5D%5D&amp;rft_id=info:doi/10.1145%2F327070.327215&amp;rft.issn=0163-5964&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D327215&amp;rfr_id=info:sid/ja.wikipedia.org:%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87"><span style="display: none;">&#160;</span></span></li></ul>
+<p><br />
+</p>
+<h2><span id=".E5.A4.96.E9.83.A8.E3.83.AA.E3.83.B3.E3.82.AF"></span><span class="mw-headline" id="外部リンク">外部リンク</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit&amp;section=10" title="節を編集: 外部リンク">編集</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sisterproject noprint" style="border:1px solid #aaa;background-color:#f9f9f9;width:22em;">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist" style="font-size:100%;">ウィキメディア・コモンズには、<b><span class="plainlinks"><a class="external text" href="https://commons.wikimedia.org/wiki/Category:Amdahl%27s_law?uselang=ja">アムダールの法則</a></span></b>に関連するカテゴリがあります。</td></tr></tbody></table>
+<ul><li><a rel="nofollow" class="external text" href="http://www.futurechips.org/thoughts-for-researchers/parallel-programming-gene-amdahl-said.html">Cases where Amdahl's law is inapplicable</a></li>
+<li><a rel="nofollow" class="external text" href="http://purl.umn.edu/104341">Oral history interview with Gene M. Amdahl</a> <a href="/wiki/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%AB%E3%82%BA%E3%83%BB%E3%83%90%E3%83%99%E3%83%83%E3%82%B8%E7%A0%94%E7%A9%B6%E6%89%80" title="チャールズ・バベッジ研究所">Charles Babbage Institute</a>, University of Minnesota.</li>
+<li><a rel="nofollow" class="external text" href="http://www.scl.ameslab.gov/Publications/Gus/AmdahlsLaw/Amdahls.html">Reevaluating Amdahl's Law</a></li>
+<li><a rel="nofollow" class="external text" href="http://spartan.cis.temple.edu/shi/public_html/docs/amdahl/amdahl.html">Reevaluating Amdahl's Law and Gustafson's Law</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.julianbrowne.com/article/viewer/amdahls-law">A simple interactive Amdahl's Law calculator</a></li>
+<li><a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/AmdahlsLaw/">"Amdahl's Law"</a> by Joel F. Klein, <a href="/wiki/Wolfram%E3%83%87%E3%83%A2%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88" title="Wolframデモンストレーションプロジェクト">Wolfram Demonstrations Project</a>, 2007.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.wisc.edu/multifacet/amdahl/">Amdahl's Law in the Multicore Era</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.gordon-taft.net/Amdahl_Law.html">Amdahl's Law explanation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cilk.com/multicore-blog/bid/5365/What-the-is-Parallelism-Anyhow">Blog Post: "What the $#@! is Parallelism, Anyhow?"</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.multicorepacketprocessing.com/how-should-amdahl-law-drive-the-redesigns-of-socket-system-calls-for-an-os-on-a-multicore-cpu">Amdahl's Law applied to OS system calls on multicore CPU</a></li></ul>
+<table class="navbox" style="border-collapse:collapse;;"><tbody><tr><td><table class="nowraplinks hlist collapsible autocollapse" style="background:transparent;color:inherit;;min-width:100%;border-spacing:2px;border-collapse:separate;"><tbody><tr><th style="" colspan="2" class="navbox-title"><div style="float:left;width:6em;text-align:left;"><div class="noprint plainlinks navbar hlist" style="white-space:nowrap;font-size:60%;font-weight:normal;background-color:transparent;padding:0;color:#000;;border:none;"><ul style="display:inline;"><li><a href="/wiki/Template:%E4%B8%A6%E5%88%97%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="Template:並列コンピューティング"><span title="このテンプレートを表示します" style="font-size:125%;;border:none;">表</span></a></li><li><a href="/w/index.php?title=Template%E2%80%90%E3%83%8E%E3%83%BC%E3%83%88:%E4%B8%A6%E5%88%97%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0&amp;action=edit&amp;redlink=1" class="new" title="Template‐ノート:並列コンピューティング (存在しないページ)"><span title="このテンプレートのノートを表示します" style="font-size:125%;color:#002bb8;;border:none;">話</span></a></li><li><a class="external text" href="https://ja.wikipedia.org/w/index.php?title=Template:並列コンピューティング&amp;action=edit"><span title="このテンプレートを編集します。保存の前にプレビューを忘れずに。" style="font-size:125%;color:#002bb8;;border:none;">編</span></a></li><li><a class="external text" href="https://ja.wikipedia.org/w/index.php?title=Template:並列コンピューティング&amp;action=history"><span title="このテンプレートの過去の版を表示します" style="font-size:125%;color:#002bb8;;border:none;">歴</span></a></li></ul></div></div><span style="font-size:110%;"><a href="/wiki/%E4%B8%A6%E5%88%97%E8%A8%88%E7%AE%97" title="並列計算">並列計算</a></span></th></tr><tr><td class="navbox-group" style=";">総論</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-odd"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="クラウドコンピューティング">クラウドコンピューティング</a></li>
+<li><a href="/wiki/%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="グリッド・コンピューティング">グリッド・コンピューティング</a></li>
+<li><a href="/wiki/%E9%AB%98%E6%80%A7%E8%83%BD%E8%A8%88%E7%AE%97" title="高性能計算">高性能計算</a></li>
+<li><a href="/wiki/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BB%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC" title="コンピュータ・クラスター">コンピュータ・クラスター</a></li>
+<li><a href="/wiki/%E5%88%86%E6%95%A3%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="分散コンピューティング">分散コンピューティング</a></li></ul></div></td></tr><tr><td class="navbox-group" style=";">並列レベル</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-even"><div style="padding:0 0.25em">
+<li><a href="/wiki/%E3%82%BF%E3%82%B9%E3%82%AF%E4%B8%A6%E5%88%97%E6%80%A7" title="タスク並列性">タスク</a></li>
+<li><a href="/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E4%B8%A6%E5%88%97%E6%80%A7" title="データ並列性">データ</a></li>
+<li><a href="/wiki/%E4%B8%A6%E5%88%97%E8%A8%88%E7%AE%97#ビットレベルの並列性" title="並列計算">ビット</a></li>
+<li><a href="/wiki/%E5%91%BD%E4%BB%A4%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AE%E4%B8%A6%E5%88%97%E6%80%A7" title="命令レベルの並列性">命令</a></li></div></td></tr><tr><td class="navbox-group" style=";">スレッド</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-odd"><div style="padding:0 0.25em">
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0&amp;action=edit&amp;redlink=1" class="new" title="スーパースレッディング (存在しないページ)">スーパースレッディング</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Super-threading" class="extiw" title="en:Super-threading">英語版</a>）</span></span></li>
+<li><a href="/wiki/%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC" title="ハイパースレッディング・テクノロジー">ハイパースレッディング</a></li></div></td></tr><tr><td class="navbox-group" style=";">理論</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-even"><div style="padding:0 0.25em">
+<li><a class="mw-selflink selflink">アムダールの法則</a></li>
+<li><a href="/wiki/%E3%82%B0%E3%82%B9%E3%82%BF%E3%83%95%E3%82%BD%E3%83%B3%E3%81%AE%E6%B3%95%E5%89%87" title="グスタフソンの法則">グスタフソンの法則</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=%E3%82%B3%E3%82%B9%E3%83%88%E5%8A%B9%E7%8E%87%E6%80%A7&amp;action=edit&amp;redlink=1" class="new" title="コスト効率性 (存在しないページ)">コスト効率性</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Cost_efficiency" class="extiw" title="en:Cost efficiency">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Karp-Flatt_metric&amp;action=edit&amp;redlink=1" class="new" title="Karp-Flatt metric (存在しないページ)">Karp-Flatt metric</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Karp-Flatt_metric" class="extiw" title="en:Karp-Flatt metric">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Parallel_slowdown&amp;action=edit&amp;redlink=1" class="new" title="Parallel slowdown (存在しないページ)">Parallel slowdown</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Parallel_slowdown" class="extiw" title="en:Parallel slowdown">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Speedup&amp;action=edit&amp;redlink=1" class="new" title="Speedup (存在しないページ)">Speedup</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Speedup" class="extiw" title="en:Speedup">英語版</a>）</span></span></li></div></td></tr><tr><td class="navbox-group" style=";">要素</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-odd"><div style="padding:0 0.25em">
+<li><a href="/wiki/%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)" title="スレッド (コンピュータ)">スレッド</a></li>
+<li><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%90%E3%83%BC_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)" title="ファイバー (コンピュータ)">ファイバー</a></li>
+<li><a href="/wiki/%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9" title="プロセス">プロセス</a></li>
+<li><a href="/wiki/%E4%B8%A6%E5%88%97%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A9%9F%E6%A2%B0" title="並列ランダムアクセス機械">PRAM</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Instruction_window&amp;action=edit&amp;redlink=1" class="new" title="Instruction window (存在しないページ)">Instruction window</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Instruction_window" class="extiw" title="en:Instruction window">英語版</a>）</span></span></li></div></td></tr><tr><td class="navbox-group" style=";">調整</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-even"><div style="padding:0 0.25em">
+<li><a href="/wiki/%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B3%E3%83%92%E3%83%BC%E3%83%AC%E3%83%B3%E3%82%B7" title="キャッシュコヒーレンシ">キャッシュコヒーレンシ</a></li>
+<li><a href="/wiki/%E5%90%8C%E6%9C%9F_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%A6)" title="同期 (計算機科学)">同期</a></li>
+<li><a href="/wiki/%E3%83%90%E3%83%AA%E3%82%A2_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%A6)" title="バリア (計算機科学)">バリア</a></li>
+<li><a href="/wiki/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0" title="ハードウェアマルチスレッディング">マルチスレッディング</a></li>
+<li><a href="/wiki/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0" title="マルチプロセッシング">マルチプロセッシング</a></li>
+<li><a href="/wiki/%E3%83%A1%E3%83%A2%E3%83%AA%E3%82%B3%E3%83%92%E3%83%BC%E3%83%AC%E3%83%B3%E3%82%B9" class="mw-redirect" title="メモリコヒーレンス">メモリコヒーレンス</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Cache_invalidation&amp;action=edit&amp;redlink=1" class="new" title="Cache invalidation (存在しないページ)">Cache invalidation</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Cache_invalidation" class="extiw" title="en:Cache invalidation">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Application_checkpointing&amp;action=edit&amp;redlink=1" class="new" title="Application checkpointing (存在しないページ)">Application checkpointing</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Application_checkpointing" class="extiw" title="en:Application checkpointing">英語版</a>）</span></span></li></div></td></tr><tr><td class="navbox-group" style=";"><a href="/wiki/%E4%B8%A6%E5%88%97%E5%8C%96" title="並列化">プログラミング</a></td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-odd"><div style="padding:0 0.25em">
+<li><a href="/wiki/%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)" title="スレッド (コンピュータ)">スレッド (コンピュータ)</a></li>
+<li><a href="/wiki/%E4%B8%A6%E5%88%97%E5%8C%96" title="並列化">並列プログラミングモデル</a>
+<ul><li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Implicit_parallelism&amp;action=edit&amp;redlink=1" class="new" title="Implicit parallelism (存在しないページ)">Implicit parallelism</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Implicit_parallelism" class="extiw" title="en:Implicit parallelism">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Explicit_parallelism&amp;action=edit&amp;redlink=1" class="new" title="Explicit parallelism (存在しないページ)">Explicit parallelism</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Explicit_parallelism" class="extiw" title="en:Explicit parallelism">英語版</a>）</span></span></li>
+<li><a href="/wiki/%E4%B8%A6%E8%A1%8C%E6%80%A7" title="並行性">並行性</a></li></ul></li>
+<li><a href="/wiki/%E3%83%95%E3%83%AA%E3%83%B3%E3%81%AE%E5%88%86%E9%A1%9E" title="フリンの分類">フリンの分類</a>
+<ul><li><a href="/wiki/SISD" title="SISD">SISD</a></li>
+<li><a href="/wiki/SIMD" title="SIMD">SIMD</a></li>
+<li><a href="/wiki/MISD" title="MISD">MISD</a></li>
+<li><a href="/wiki/MIMD" title="MIMD">MIMD</a>
+<ul><li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=SPMD&amp;action=edit&amp;redlink=1" class="new" title="SPMD (存在しないページ)">SPMD</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/SPMD" class="extiw" title="en:SPMD">英語版</a>）</span></span></li></ul></li></ul></li>
+<li><a href="/wiki/Lock-free%E3%81%A8Wait-free%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Lock-freeとWait-freeアルゴリズム">Lock-freeとWait-freeアルゴリズム</a></li></div></td></tr><tr><td class="navbox-group" style=";"><a href="/wiki/%E4%B8%A6%E5%88%97%E8%A8%88%E7%AE%97#ハードウェア" title="並列計算">ハードウェア</a></td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-even"><div style="padding:0 0.25em">
+<li><a href="/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF" title="スーパーコンピュータ">スーパーコンピュータ</a></li>
+<li><a href="/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC" title="スーパースカラー">スーパースカラー</a></li>
+<li><a href="/wiki/%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A8%88%E7%AE%97%E6%A9%9F" title="ベクトル計算機">ベクトル計算機</a></li>
+<li>マルチプロセッシング
+<ul><li><a href="/wiki/%E5%AF%BE%E7%A7%B0%E5%9E%8B%E3%83%9E%E3%83%AB%E3%83%81%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0" title="対称型マルチプロセッシング">対称型</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Asymmetric_multiprocessing" class="extiw" title="en:Asymmetric multiprocessing">非対称型</a></li>
+<li><a href="/wiki/%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B3%E3%82%A2" title="マルチコア">マルチコア</a></li></ul></li>
+<li>メモリ
+<ul><li><a href="/wiki/NUMA" title="NUMA">NUMA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cache_only_memory_architecture" class="extiw" title="en:Cache only memory architecture">en:COMA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_memory" class="extiw" title="en:Distributed memory">en:分散型</a></li>
+<li><a href="/wiki/%E5%85%B1%E6%9C%89%E3%83%A1%E3%83%A2%E3%83%AA" title="共有メモリ">共有型</a></li>
+<li><a href="/wiki/%E5%88%86%E6%95%A3%E5%85%B1%E6%9C%89%E3%83%A1%E3%83%A2%E3%83%AA" title="分散共有メモリ">分散共有型</a></li></ul></li>
+<li><a href="/wiki/%E5%90%8C%E6%99%82%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0" title="同時マルチスレッディング">SMT</a></li>
+<li><a href="/wiki/%E8%B6%85%E4%B8%A6%E5%88%97%E3%83%9E%E3%82%B7%E3%83%B3" title="超並列マシン">MPP</a></li>
+<li><a href="/wiki/Beowulf" title="Beowulf">Beowulf</a></li></div></td></tr><tr><td class="navbox-group" style=";"><a href="/wiki/%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9" title="アプリケーションプログラミングインタフェース">API</a></td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-odd"><div style="padding:0 0.25em">
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Ateji_PX&amp;action=edit&amp;redlink=1" class="new" title="Ateji PX (存在しないページ)">Ateji PX</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Ateji_PX" class="extiw" title="en:Ateji PX">英語版</a>）</span></span></li>
+<li><a href="/wiki/Boost#マルチスレッド" title="Boost">Boostスレッド</a></li>
+<li><a href="/wiki/C%2B%2B_AMP" title="C++ AMP">C++ AMP</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Charm%2B%2B&amp;action=edit&amp;redlink=1" class="new" title="Charm++ (存在しないページ)">Charm++</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Charm%2B%2B" class="extiw" title="en:Charm++">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Cilk&amp;action=edit&amp;redlink=1" class="new" title="Cilk (存在しないページ)">Cilk</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Cilk" class="extiw" title="en:Cilk">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Coarray_Fortran&amp;action=edit&amp;redlink=1" class="new" title="Coarray Fortran (存在しないページ)">Coarray Fortran</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Coarray_Fortran" class="extiw" title="en:Coarray Fortran">英語版</a>）</span></span></li>
+<li><a href="/wiki/CUDA" title="CUDA">CUDA</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Dryad&amp;action=edit&amp;redlink=1" class="new" title="Dryad (存在しないページ)">Dryad</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Dryad_(programming)" class="extiw" title="en:Dryad (programming)">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Global_Arrays&amp;action=edit&amp;redlink=1" class="new" title="Global Arrays (存在しないページ)">Global Arrays</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Global_Arrays" class="extiw" title="en:Global Arrays">英語版</a>）</span></span></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=Intel_Cilk_Plus&amp;action=edit&amp;redlink=1" class="new" title="Intel Cilk Plus (存在しないページ)">Intel Cilk Plus</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/Intel_Cilk_Plus" class="extiw" title="en:Intel Cilk Plus">英語版</a>）</span></span></li>
+<li><a href="/wiki/Intel_Threading_Building_Blocks" title="Intel Threading Building Blocks">Intel Threading Building Blocks</a></li>
+<li><a href="/wiki/Message_Passing_Interface" title="Message Passing Interface">MPI</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=OpenACC&amp;action=edit&amp;redlink=1" class="new" title="OpenACC (存在しないページ)">OpenACC</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/OpenACC" class="extiw" title="en:OpenACC">英語版</a>）</span></span></li>
+<li><a href="/wiki/OpenCL" title="OpenCL">OpenCL</a></li>
+<li><span title="リンク先の項目はまだありません。新規の執筆や他言語版からの翻訳が望まれます。"><a href="/w/index.php?title=OpenHMPP&amp;action=edit&amp;redlink=1" class="new" title="OpenHMPP (存在しないページ)">OpenHMPP</a><span style="font-size: 0.77em; font-weight: normal;" class="noprint">（<a href="https://en.wikipedia.org/wiki/OpenHMPP" class="extiw" title="en:OpenHMPP">英語版</a>）</span></span></li>
+<li><a href="/wiki/OpenMP" title="OpenMP">OpenMP</a></li>
+<li><a href="/wiki/Parallel_Virtual_Machine" title="Parallel Virtual Machine">PVM</a></li>
+<li><a href="/wiki/POSIX%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89" title="POSIXスレッド">POSIXスレッド</a></li>
+<li><a href="/wiki/Unified_Parallel_C" title="Unified Parallel C">UPC</a></li></div></td></tr><tr><td class="navbox-group" style=";">問題</td><td style="text-align:left;width:100%;padding:0;;;" class="navbox-list navbox-even"><div style="padding:0 0.25em">
+<li><a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel" class="extiw" title="en:Embarrassingly parallel">en:Embarrassingly parallel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Grand_Challenge_problem" class="extiw" title="en:Grand Challenge problem">en:Grand Challenge</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Software_lockout" class="extiw" title="en:Software lockout">en:Software lockout</a></li></div></td></tr><tr><td class="navbox-abovebelow" style="" colspan="2">
+<li><a href="/wiki/%E4%B8%A6%E8%A1%8C%E8%A8%88%E7%AE%97" title="並行計算">並行計算</a></li>
+<li><a href="/wiki/Category:%E4%B8%A6%E8%A1%8C%E8%A8%88%E7%AE%97" title="Category:並行計算">カテゴリ:並行計算</a></li>
+<li><a href="/wiki/Category:%E4%B8%A6%E5%88%97%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="Category:並列コンピューティング">カテゴリ:並列コンピューティング</a></li></td></tr></tbody></table></td></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Parsed by mw1338
+Cached time: 20181027040605
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.280 seconds
+Real time usage: 0.372 seconds
+Preprocessor visited node count: 3631/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 79499/2097152 bytes
+Template argument size: 9174/2097152 bytes
+Highest expansion depth: 26/40
+Expensive parser function count: 21/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1979/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.024/10.000 seconds
+Lua memory usage: 2.12 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  216.783      1 -total
+ 40.69%   88.212      2 Template:Cite_journal
+ 30.98%   67.158     21 Template:仮リンク
+ 29.63%   64.243      2 Template:Citation/core
+ 22.23%   48.184      1 Template:並列コンピューティング
+ 21.76%   47.174     21 Template:仮リンク/link
+ 20.35%   44.110      1 Template:Navbox
+ 16.63%   36.052     21 Template:Wikipedia言語名
+ 15.73%   34.109      1 Template:Commonscat
+ 14.90%   32.297      1 Template:Sister
+-->
+
+<!-- Saved in parser cache with key jawiki:pcache:idhash:576752-0!canonical!math=5 and timestamp 20181027040605 and revision id 67406945
+ -->
+</div><noscript><img src="//ja.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						「<a dir="ltr" href="https://ja.wikipedia.org/w/index.php?title=アムダールの法則&amp;oldid=67406945">https://ja.wikipedia.org/w/index.php?title=アムダールの法則&amp;oldid=67406945</a>」から取得					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA" title="特別:カテゴリ">カテゴリ</a>: <ul><li><a href="/wiki/Category:%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3" title="Category:コンピュータアーキテクチャ">コンピュータアーキテクチャ</a></li><li><a href="/wiki/Category:%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%95%E5%89%87" title="Category:コンピュータに関する法則">コンピュータに関する法則</a></li><li><a href="/wiki/Category:%E4%B8%A6%E5%88%97%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" title="Category:並列コンピューティング">並列コンピューティング</a></li><li><a href="/wiki/Category:%E3%82%A8%E3%83%9D%E3%83%8B%E3%83%A0" title="Category:エポニム">エポニム</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>案内メニュー</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">個人用ツール</h3>
+						<ul>
+							<li id="pt-anonuserpage">ログインしていません</li><li id="pt-anontalk"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%83%88%E3%83%BC%E3%82%AF%E3%83%9A%E3%83%BC%E3%82%B8" title="このIPアドレスからなされた編集についての議論 [n]" accesskey="n">トーク</a></li><li id="pt-anoncontribs"><a href="/wiki/%E7%89%B9%E5%88%A5:%E8%87%AA%E5%88%86%E3%81%AE%E6%8A%95%E7%A8%BF%E8%A8%98%E9%8C%B2" title="このIPアドレスからなされた編集の一覧 [y]" accesskey="y">投稿記録</a></li><li id="pt-createaccount"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E4%BD%9C%E6%88%90&amp;returnto=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" title="アカウントを作成してログインすることをお勧めしますが、必須ではありません">アカウント作成</a></li><li id="pt-login"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3&amp;returnto=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" title="ログインすることを推奨します。ただし、必須ではありません。 [o]" accesskey="o">ログイン</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">名前空間</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" title="本文を閲覧 [c]" accesskey="c">ページ</a></span></li><li id="ca-talk"><span><a href="/wiki/%E3%83%8E%E3%83%BC%E3%83%88:%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" rel="discussion" title="本文ページについての議論 [t]" accesskey="t">ノート</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>変種</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">表示</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87">閲覧</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=edit" title="このページを編集 [e]" accesskey="e">編集</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=history" title="このページの過去の版 [h]" accesskey="h">履歴表示</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>その他</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">検索</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Wikipedia内を検索" title="Wikipedia内を検索する [f]" accesskey="f" id="searchInput"/><input type="hidden" value="特別:検索" name="title"/><input type="submit" name="fulltext" value="検索" title="この文字列が含まれるページを探す" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="表示" title="厳密に一致する名前のページが存在すれば、そのページへ移動する" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8"  title="メインページに移動する"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">案内</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage"><a href="/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8" title="メインページに移動する [z]" accesskey="z">メインページ</a></li><li id="n-portal"><a href="/wiki/Wikipedia:%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB" title="このプロジェクトについて、できること、情報を入手する場所">コミュニティ・ポータル</a></li><li id="n-currentevents"><a href="/wiki/Portal:%E6%9C%80%E8%BF%91%E3%81%AE%E5%87%BA%E6%9D%A5%E4%BA%8B" title="最近の出来事の背景を知る">最近の出来事</a></li><li id="n-newpages"><a href="/wiki/%E7%89%B9%E5%88%A5:%E6%96%B0%E3%81%97%E3%81%84%E3%83%9A%E3%83%BC%E3%82%B8" title="最近新規に作成されたページの一覧">新しいページ</a></li><li id="n-recentchanges"><a href="/wiki/%E7%89%B9%E5%88%A5:%E6%9C%80%E8%BF%91%E3%81%AE%E6%9B%B4%E6%96%B0" title="このウィキにおける最近の更新の一覧 [r]" accesskey="r">最近の更新</a></li><li id="n-randompage"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B%E8%A1%A8%E7%A4%BA" title="無作為に選択されたページを読み込む [x]" accesskey="x">おまかせ表示</a></li><li id="n-sandbox"><a href="/wiki/Wikipedia:%E3%82%B5%E3%83%B3%E3%83%89%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9" title="練習用のページ">練習用ページ</a></li><li id="n-commonsupload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=ja" title="画像やメディアファイルをウィキメディア・コモンズにアップロード">アップロード (ウィキメディア・コモンズ)</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-help" aria-labelledby="p-help-label">
+			<h3 id="p-help-label">ヘルプ</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:%E7%9B%AE%E6%AC%A1" title="情報を得る場所">ヘルプ</a></li><li id="n-villagepump"><a href="/wiki/Wikipedia:%E4%BA%95%E6%88%B8%E7%AB%AF" title="プロジェクトについての意見交換">井戸端</a></li><li id="n-notice"><a href="/wiki/Wikipedia:%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B" title="プロジェクトについてのお知らせ">お知らせ</a></li><li id="n-bugreportspage"><a href="/wiki/Wikipedia:%E3%83%90%E3%82%B0%E3%81%AE%E5%A0%B1%E5%91%8A" title="ウィキペディア・ソフトウェアのバグ報告">バグの報告</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_ja.wikipedia.org&amp;uselang=ja" title="ご支援ください">寄付</a></li><li id="n-contact"><a href="/wiki/Wikipedia:%E9%80%A3%E7%B5%A1%E5%85%88" title="ウィキペディアやウィキメディア財団に関する連絡先">ウィキペディアに関するお問い合わせ</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">ツール</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" title="ここにリンクしている全ウィキページの一覧 [j]" accesskey="j">リンク元</a></li><li id="t-recentchangeslinked"><a href="/wiki/%E7%89%B9%E5%88%A5:%E9%96%A2%E9%80%A3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%B3%81/%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87" rel="nofollow" title="このページからリンクしているページの最近の更新 [k]" accesskey="k">関連ページの更新状況</a></li><li id="t-upload"><a href="/wiki/Wikipedia:%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89" title="ファイルをアップロードする [u]" accesskey="u">ファイルをアップロード</a></li><li id="t-specialpages"><a href="/wiki/%E7%89%B9%E5%88%A5:%E7%89%B9%E5%88%A5%E3%83%9A%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7" title="特別ページの一覧 [q]" accesskey="q">特別ページ</a></li><li id="t-permalink"><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;oldid=67406945" title="このページのこの版への固定リンク">この版への固定リンク</a></li><li id="t-info"><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=info" title="このページについての詳細情報">ページ情報</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q460419" title="関連付けられたデータリポジトリ項目へのリンク [g]" accesskey="g">ウィキデータ項目</a></li><li id="t-cite"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%81%93%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E5%BC%95%E7%94%A8&amp;page=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;id=67406945" title="このページの引用方法">このページを引用</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">印刷/書き出し</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%83%96%E3%83%83%E3%82%AF&amp;bookcmd=book_creator&amp;referer=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87">ブックの新規作成</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:ElectronPdf&amp;page=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;action=show-download-screen">PDF 形式でダウンロード</a></li><li id="t-print"><a href="/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;printable=yes" title="このページの印刷用ページ [p]" accesskey="p">印刷用バージョン</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">他のプロジェクト</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Amdahl%27s_law" hreflang="en">コモンズ</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">他言語版</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A3%D9%85%D8%AF%D8%A7%D9%84" title="アラビア語: قانون أمدال" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Llei_d%27Amdahl" title="カタロニア語: Llei d&#039;Amdahl" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Amdahl%C5%AFv_z%C3%A1kon" title="チェコ語: Amdahlův zákon" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Amdahlsches_Gesetz" title="ドイツ語: Amdahlsches Gesetz" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-en"><a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" title="英語: Amdahl&#039;s law" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ley_de_Amdahl" title="スペイン語: Ley de Amdahl" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Amdahli_seadus" title="エストニア語: Amdahli seadus" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A7%D9%85%D8%AF%D8%A7%D9%84" title="ペルシア語: قانون امدال" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Loi_d%27Amdahl" title="フランス語: Loi d&#039;Amdahl" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%A7_%D7%90%D7%9E%D7%93%D7%9C" title="ヘブライ語: חוק אמדל" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/Amdahlov_zakon" title="クロアチア語: Amdahlov zakon" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Hukum_Amdahl" title="インドネシア語: Hukum Amdahl" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Legge_di_Amdahl" title="イタリア語: Legge di Amdahl" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%95%94%EB%8B%AC%EC%9D%98_%EB%B2%95%EC%B9%99" title="韓国語: 암달의 법칙" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%90%D0%BC%D0%B4%D0%B0%D0%BB%D0%BE%D0%B2_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD" title="マケドニア語: Амдалов закон" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Prawo_Amdahla" title="ポーランド語: Prawo Amdahla" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Lei_de_Amdahl" title="ポルトガル語: Lei de Amdahl" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Legea_lui_Amdahl" title="ルーマニア語: Legea lui Amdahl" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%90%D0%BC%D0%B4%D0%B0%D0%BB%D0%B0" title="ロシア語: Закон Амдала" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Amdalhove_pravidlo" title="スロバキア語: Amdalhove pravidlo" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%90%D0%BC%D0%B4%D0%B0%D0%BB%D0%BE%D0%B2_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD" title="セルビア語: Амдалов закон" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Amdahl_yasas%C4%B1" title="トルコ語: Amdahl yasası" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%90%D0%BC%D0%B4%D0%B0%D0%BB%D0%B0" title="ウクライナ語: Закон Амдала" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Lu%E1%BA%ADt_Amdahl" title="ベトナム語: Luật Amdahl" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%A7%86%E8%BE%BE%E5%B0%94%E5%AE%9A%E5%BE%8B" title="中国語: 阿姆达尔定律" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q460419#sitelinks-wikipedia" title="言語間リンクを編集する" class="wbc-editpage">リンクを編集</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> 最終更新 2018年2月16日 (金) 17:11 （日時は<a href="/wiki/%E7%89%B9%E5%88%A5:%E5%80%8B%E4%BA%BA%E8%A8%AD%E5%AE%9A#mw-prefsection-rendering" title="特別:個人設定">個人設定</a>で未設定ならば<a href="/wiki/%E5%8D%94%E5%AE%9A%E4%B8%96%E7%95%8C%E6%99%82" title="協定世界時">UTC</a>）。</li>
+								<li id="footer-info-copyright">テキストは<a href="//ja.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">クリエイティブ・コモンズ 表示-継承ライセンス</a>の下で利用可能です。追加の条件が適用される場合があります。詳細は<a href="//foundation.wikimedia.org/wiki/Terms_of_Use/ja">利用規約</a>を参照してください。<br /></li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/ja" class="extiw" title="m:Privacy policy/ja">プライバシー・ポリシー</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" title="Wikipedia:ウィキペディアについて">ウィキペディアについて</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85" title="Wikipedia:免責事項">免責事項</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">開発者</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookieに関する声明</a></li>
+								<li id="footer-places-mobileview"><a href="//ja.m.wikipedia.org/w/index.php?title=%E3%82%A2%E3%83%A0%E3%83%80%E3%83%BC%E3%83%AB%E3%81%AE%E6%B3%95%E5%89%87&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">モバイルビュー</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.280","walltime":"0.372","ppvisitednodes":{"value":3631,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":79499,"limit":2097152},"templateargumentsize":{"value":9174,"limit":2097152},"expansiondepth":{"value":26,"limit":40},"expensivefunctioncount":{"value":21,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1979,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  216.783      1 -total"," 40.69%   88.212      2 Template:Cite_journal"," 30.98%   67.158     21 Template:仮リンク"," 29.63%   64.243      2 Template:Citation/core"," 22.23%   48.184      1 Template:並列コンピューティング"," 21.76%   47.174     21 Template:仮リンク/link"," 20.35%   44.110      1 Template:Navbox"," 16.63%   36.052     21 Template:Wikipedia言語名"," 15.73%   34.109      1 Template:Commonscat"," 14.90%   32.297      1 Template:Sister"]},"scribunto":{"limitreport-timeusage":{"value":"0.024","limit":"10.000"},"limitreport-memusage":{"value":2221095,"limit":52428800}},"cachereport":{"origin":"mw1338","timestamp":"20181027040605","ttl":1900800,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":99,"wgHostname":"mw1333"});});</script>
+	</body>
+</html>
